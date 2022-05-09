@@ -34,6 +34,7 @@ export const putDb = async (content) => {
 export const getDb = async () => {
   console.log("GET all from the database");
   // create the connection -- version 1
+
   const jateDb = await openDB("jate", 1);
   // creates the transaction as readonly
   const tx = jateDb.transaction("jate", "readonly");

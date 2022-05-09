@@ -31,8 +31,8 @@
       "type": "image/png"
     }
   ],
-  "name": "EL Text Editor",
-  "short_name": "ELTE",
+  "name": "jate",
+  "short_name": "jate",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",

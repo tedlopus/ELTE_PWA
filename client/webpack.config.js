@@ -21,7 +21,7 @@ module.exports = () => {
       // webpack plugin
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'ELTE Best Text Editor',
+        title: 'jate',
       }),
 
       // injects service worker
@@ -34,8 +34,8 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'EL Text Editor',
-        short_name: 'ELTE',
+        name: 'jate',
+        short_name: 'jate',
         description: 'Your new favorite text editor!',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
