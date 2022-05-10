@@ -28,9 +28,13 @@ warmStrategyCache({
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
+// callback function that filters the css style and java scripts and worker
 registerRoute(({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+// StaleWhileRevalidate loads the cached content right away and ensures updates to the cached content are used in the future
 new StaleWhileRevalidate({
+  // name of the cache
   cacheName: 'asset-cache',
+  // The plugin will cache these headers up to 30 days
   plugins: [
     new CacheableResponsePlugin({
       statuses: [0, 200],

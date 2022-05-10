@@ -31,8 +31,8 @@
       "type": "image/png"
     }
   ],
-  "name": "jate",
-  "short_name": "jate",
+  "name": "Edward Lopus Text Editor",
+  "short_name": "elte",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
