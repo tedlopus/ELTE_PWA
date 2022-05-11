@@ -18,7 +18,7 @@ export const putDb = async (content) => {
   // create the connection -- version 1
   const jateDb = await openDB("jate", 1);
   // creates the transaction as readwrite
-  const tx = jateDb.transaction("jate", "readwrite");
+  const tx = jateDb.transaction(["jate"], "readwrite");
   // use object store to store the db
   const store = tx.objectStore("jate");
   // put new additions into the db
@@ -37,7 +37,7 @@ export const getDb = async () => {
 
   const jateDb = await openDB("jate", 1);
   // creates the transaction as readonly
-  const tx = jateDb.transaction("jate", "readonly");
+  const tx = jateDb.transaction(["jate"], "readonly");
   // use object store to store the db
   const store = tx.objectStore("jate");
   // get all from store
