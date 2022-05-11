@@ -34,8 +34,8 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Edward Lopus Text Editor',
-        short_name: 'elte',
+        name: 'jate',
+        short_name: 'jate',
         description: 'Your new favorite text editor!',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
