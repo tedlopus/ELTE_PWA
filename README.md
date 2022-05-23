@@ -4,6 +4,8 @@ A text editor web application that runs in the browser and allows for persistent
 
 ## Deployed Link
 
+https://jate-elte.herokuapp.com/
+
 ## Table of Contents
 
 - [Description](#description)
